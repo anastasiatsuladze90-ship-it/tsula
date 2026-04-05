@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 25px 50px;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* ICON LEFT */
+.logo {
+    font-size: 32px;
+    color: white;
+}
+
+/* MENU RIGHT */
+.menu {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.menu li {
+    margin-left: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+/* underline hover */
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #ff3c00;
+    transition: 0.3s;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1550547660-d9450f859349") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* OVERLAY */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+}
+
+/* CONTENT CENTER */
+.content {
+    position: relative;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+}
+
+.content h1 {
+    font-size: 52px;
+    line-height: 1.3;
+    margin-bottom: 35px;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 14px 28px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* MAIN BUTTON */
+.main {
+    background: #ff3c00;
+    color: white;
+}
+
+/* SECOND BUTTON */
+.secondary {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.main:hover {
+    background: #ff5a2a;
+}
+
+.secondary:hover {
+    background: white;
+    color: black;
+}
